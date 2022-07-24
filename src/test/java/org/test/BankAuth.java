@@ -24,11 +24,11 @@ public class BankAuth {
 	public void canAuthLogin() {
 				//SmartID login
 				$("#SMART_ID.-active").click();
-				//Enter your User ID  
-				$("#login-widget-user-id-sid").setValue("5188550");
+				//Enter your "Bank User ID" in the setValue bracket
+				$("#login-widget-user-id-sid").setValue("");
 				sleep(1000);
-				//Enter your personal ID code 
-				$("#login-widget-identity-number-smart-id").setValue("39502150054");
+				//Enter your personal ID code in the setValue bracket
+				$("#login-widget-identity-number-smart-id").setValue("");
 				$(By.name("rememberMe")).shouldBe(checked);
 				sleep(1000);
 				$("button.-positive").click(); //Remember to authenticate your login via Smart_ID App
